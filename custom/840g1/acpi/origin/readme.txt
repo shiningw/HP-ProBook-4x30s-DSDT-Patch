@@ -1,0 +1,1 @@
+files dumped under linux(/sys/firmware/acpi/table)

@@ -1,0 +1,1 @@
+dumped under linux (cat /proc/asound/card1/codec#0)

@@ -1,0 +1,1 @@
+this is a working copy of DSDT patching that is to be installed at /EFI/clover/

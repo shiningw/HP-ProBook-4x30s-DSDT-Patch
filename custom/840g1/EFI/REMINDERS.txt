@@ -1,0 +1,10 @@
+this file is placed here to remind me of how to install hackintosh on 840g1 later.
+
+1,CLOVER/ACPI/origin contains original DSDT and SSTD files, which can be obtained under LINUX by copying files under /sys/firmware/acpi/tables/ or at the boatloader CLOVER console by pressing F4.
+2,files in CLOVER/ACPI/patched are patched ACPI code that will make hackintosh function like a real mac. these patches can be generated using Maciasl. The process of generating these patches is as follows:
+ a:copy original ACPI files (as mentioned in 1) to a folder and deassemble them into DSL files using the binary iasl (iasl -da -dl SSDT* DSDT*)
+ b:open the disassembled dsl files and apply needed patches, and there are a variety of patches that can fix issues like audio,battery status, etc.
+ 
+3,CLOVER/config.plist is the configuration file for CLOVER, among other parameters, the IntelGFX is vital as it probably won’t boot without a correct value.
+
+
